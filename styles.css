@@ -4,3 +4,19 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
+
+:root {
+  /* fontes  */
+  --primary-font: "Merriweather Sans", sans-serif;
+  --secondary-font: "JetBrains Mono", monospace;
+  /* cores  */
+  --palatine-blue-one: #2348e1;
+  --palatine-blue-two: - #2c45e2
+  --palatine-blue-three:- #5336e5
+  --white: - #fefefe
+  --palatine-blue-five: - #4040e4
+}
+
+h1 {
+  color: var(--palatine-blue-one);
+}
