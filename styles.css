@@ -17,6 +17,59 @@
   --palatine-blue-five: - #4040e4
 }
 
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+header {
+height: 100px;
+display: flex;
+align-items: center;
+justify-content:space-evenly;
+}
+
+.navigation {
+  background-color: var(--palatine-blue-one);
+  border-radius: 50px;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.nav-bg {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  background: #fff;
+  width: 100px;
+  padding: 8px 0;
+  border-radius: 18px;
+}
+
+.navigation ul li {
+  position: relative;
+  display: flex;
+  background: var(--white);
+  padding: 8px;
+}
+
+.navigation ul li a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: var(--primary-font);
+  color: var(--palatine-blue-one);
+  font-size: 16px;
+}
+
+
 h1 {
   color: var(--palatine-blue-one);
 }
