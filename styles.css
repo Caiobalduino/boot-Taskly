@@ -11,10 +11,10 @@
   --secondary-font: "JetBrains Mono", monospace;
   /* cores  */
   --palatine-blue-one: #2348e1;
-  --palatine-blue-two: - #2c45e2
-  --palatine-blue-three:- #5336e5
-  --white: - #fefefe
-  --palatine-blue-five: - #4040e4
+  --palatine-blue-two: - #2c45e2;
+  --palatine-blue-three:- #5336e5;
+  --white:#fefefe;
+  --palatine-blue-five:#4040e4;
 }
 
 body {
@@ -26,10 +26,27 @@ header {
 height: 100px;
 display: flex;
 align-items: center;
-justify-content:space-evenly;
+justify-content: space-between;
+padding: 0 20px;
+position: relative;
+}
+
+.content-header {
+  display: flex;
+  align-items: center;
+}
+
+.content-header img {
+  height: 60px;
+  display: flex;
 }
 
 .navigation {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
   background-color: var(--palatine-blue-one);
   border-radius: 50px;
 }
@@ -54,7 +71,8 @@ justify-content:space-evenly;
 .navigation ul li {
   position: relative;
   display: flex;
-  background: var(--white);
+  justify-content: center;
+  align-items: center;
   padding: 8px;
 }
 
@@ -66,7 +84,6 @@ justify-content:space-evenly;
   text-decoration: none;
   font-family: var(--primary-font);
   color: var(--palatine-blue-one);
-  font-size: 16px;
 }
 
 
