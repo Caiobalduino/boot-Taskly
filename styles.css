@@ -57,15 +57,59 @@ position: relative;
   gap: 15px;
 }
 
-.nav-bg {
+.nav-bg1, .nav-bg2 {
   display: flex;
+  cursor: pointer;
   align-items: center;
-  gap: 5px;
   justify-content: center;
+  gap: 5px;
   background: #fff;
-  width: 100px;
-  padding: 8px 0;
-  border-radius: 18px;
+  width: 40px; 
+  padding: 8px 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-bg1 img, .nav-bg2 img {
+  width: 24px;
+  height: 24px;
+  transition: margin 0.3s ease-in-out;
+}
+
+.nav-bg1 a {
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, margin 0.3s ease-in-out;
+  margin-left: -48px; 
+}
+
+.nav-bg2 a {
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, margin 0.3s ease-in-out;
+  margin-left: -68px; 
+}
+
+
+.nav-bg1:hover, .nav-bg2:hover {
+  width: 120px; 
+  justify-content: flex-start;
+  padding-left: 15px; 
+}
+
+.nav-bg1:hover img, .nav-bg2:hover img {
+  margin-right: 5px; 
+}
+
+.nav-bg1:hover a {
+  opacity: 1;
+  margin-left: 5px; 
+}
+
+.nav-bg2:hover a {
+  opacity: 1;
+  margin-left: 0px; 
 }
 
 .navigation ul li {
