@@ -263,3 +263,48 @@ header {
   filter: drop-shadow(-20px 15px 5px rgba(0, 0, 0, 0.5));
   transition: transform 0.2s ease-out;
 }
+
+.partners {
+  width: 100%;
+  overflow: hidden;
+  padding-block: 2.5rem;
+
+  .partner-track {
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(90deg, #001057, #500031);
+    background-size: 400%;
+    background-position: 0 50%;
+    animation: bg-gradient 10s ease infinite;
+  }
+
+  .partner-logos {
+    display: flex;
+    animation: scroll-logos 10s linear infinite;
+    gap: 55px;
+  }
+
+  .partner-logos img {
+    width: 100px;
+    opacity: 0.9;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+  }
+  
+  .partner-logos img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+@keyframes bg-gradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes scroll-logos {
+  to {
+    transform: translateX(-776px);
+  }
+}
