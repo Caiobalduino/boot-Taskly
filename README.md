@@ -46,7 +46,7 @@ Taskly é uma aplicação web desenvolvida para auxiliar empresas e profissionai
 ## 📂 Estrutura do Projeto
 
 ```plaintext
-📂 convert
+📂 Taskly
  ├── 📁 imgs          # Imagens gerais do projeto / capa.
  ├── 📄 index.html    # Estrutura da página inicial.
  ├── 📄 contact.html  # Estrutura da página de contato.
